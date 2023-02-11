@@ -18,6 +18,22 @@ const generateToken = (user: IUser): string => {
   }
 };
 
+// const generateTokenLogin = (login: ILogin): string => {
+//   try {
+//     return jwt.sign(
+//       login, 
+//       TOKEN_SECRET,
+//       {
+//         expiresIn: '30d',
+//         algorithm: 'HS256',
+//       },
+//     );
+//   } catch (error) {
+//     throw new Error('Falha ao gerar token');
+//   }
+// };
+
 export default {
   generateToken,
+  // generateTokenLogin,
 };
